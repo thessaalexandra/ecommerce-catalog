@@ -1,0 +1,229 @@
+.container {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+*/.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.category-rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    color: #000000;
+    font-size: 20px;
+    margin-left: 255px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(to bottom, #dcdcdc, #ffffff);
+}
+
+.page-container.mens-clothing {
+    background: linear-gradient(to bottom, #d6e6ff, #ffffff);
+}
+
+.page-container.womens-clothing {
+    background: linear-gradient(to bottom, #fde2ff, #ffffff);
+}
+
+.page-container.not-available {
+    background: linear-gradient(to bottom, #dcdcdc, #ffffff);
+}
+
+.product-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+        0 0 5px rgba(0, 0, 0, 0.2),
+        0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+}
+
+.product-content h2 {
+    font-family: 'Dosis', sans-serif;
+}
+
+.product-image {
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.text-container {
+    flex: 1;
+    text-align: justify;
+}
+
+.price {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.blue-text {
+    color: #002772;
+}
+
+.pink-text {
+    color: #720060;
+}
+
+.blue-star {
+    color: #002772;
+}
+
+.pink-star {
+    color: #720060;
+}
+
+.buy-button {
+    background-color: #002772;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1px;
+    width: 217px;
+}
+
+.blue-button {
+    background-color: #002772;
+    color: #fff;
+}
+
+.pink-button {
+    background-color: #720060;
+    color: #fff;
+}
+
+.buy-button:hover {
+    background-color: #dcdcdc;
+}
+
+.next-button {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 2px;
+    width: 217px;
+}
+
+.next-button:hover {
+    background-color: #dcdcdc;
+    border: 1px solid #dcdcdc;
+    color: #ffffff;
+}
+
+.next-button.blue-button {
+    background-color: #002772;
+    border: 1px solid #002772;
+    /* Garis luar biru untuk produk pakaian pria */
+    color: #fff;
+}
+
+.next-button.blue-button:hover {
+    background-color: #dcdcdc;
+    border: 1px solid #dcdcdc;
+    /* Mengubah warna garis luar menjadi abu-abu saat dihover */
+    color: #002772;
+}
+
+.next-button.pink2-button {
+    background-color: #dcdcdc;
+    /* Background abu-abu untuk produk tidak tersedia */
+    border: 1px solid #dcdcdc;
+    /* Garis luar abu-abu untuk produk tidak tersedia */
+    color: #720060;
+}
+
+.next-button.pink2-button:hover {
+    background-color: #720060;
+    border: 1px solid #720060;
+    /* Mengubah warna garis luar menjadi merah muda saat dihover */
+    color: #fff;
+}
+
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 50px auto;
+}
+
+.category-text {
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 8px;
+    margin-left: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.skeleton-loader {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: -100% 50%;
+    }
+}
